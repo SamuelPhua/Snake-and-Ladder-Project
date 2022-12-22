@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="player"></div>
+    <canvas id="game" width="1200" height="800"></canvas>
+    <div id="side">
+      <div id="player-stats">
+        <div id="player1-section">
+          <p id="p-turn">Roll the dice for Player 1</p>
+          <button id="roll-dice-button-p1">Roll me</button>
+        </div>
+        <div id="player2-section">
+          <p id="p-turn">Roll the dice for Player 2</p>
+          <button id="roll-dice-button-p2">Roll me</button>
+        </div>
+      </div>
+      <div id="cube-outer">
+        <div id="cube-inner">
+          <div id="front"><img src="/images/1.png" /></div>
+          <div id="back"><img src="/images/2.png" /></div>
+          <div id="left"><img src="/images/3.png" /></div>
+          <div id="right"><img src="/images/4.png" /></div>
+          <div id="top"><img src="/images/5.png" /></div>
+          <div id="bottom"><img src="/images/6.png" /></div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center; margin-top: 50px">
+        <button id="restart-game-btn">RESTART GAME</button>
+      </div>
+    </div>
+    <script src="gameboard.js"></script>
+    <script src="player.js"></script>
+    <script src="tile.js"></script>
+    <script src="finalscript.js"></script>
+  </body>
+</html>
